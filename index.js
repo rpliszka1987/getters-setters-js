@@ -26,3 +26,36 @@ const robot = {
 robot.numOfSensors = 250;
 
 console.log(robot.numOfSensors);
+
+
+const users = {
+  _firstName: "Robert",
+  _lastName: "Pliszka",
+  _age: 35,
+  get userInfo() {
+    return `User: ${this._firstName} ${this._lastName} Age: ${this._age}`;
+  },
+  set newUserFirstName(firstName) {
+    if (typeof firstName === "string") {
+      this._firstName = firstName;
+    }
+  },
+  set newUserLastName(lastName) {
+    if (typeof lastName === "string") {
+      this._lastName = lastName;
+    }
+  },
+  set newUserAge(age) {
+    if (typeof age === "number") {
+      this._age = age;
+    }
+  },
+};
+
+console.log(users.userInfo);
+
+users.newUserFirstName = "Heidi";
+users.newUserLastName = "Done";
+users.newUserAge = 32;
+
+console.log(users.userInfo);
