@@ -1,4 +1,4 @@
-
+// Created a factory function
 const createCharacter = (name, level) => {
   return {
     name: name,
@@ -9,6 +9,7 @@ const createCharacter = (name, level) => {
   };
 };
 
-const spiderman = createCharacter('Spider-Man', 100);
+// createing new character using factory function
+const spiderman = createCharacter("Spider-Man", 100);
 
-spiderman.hello()
+spiderman.hello();
