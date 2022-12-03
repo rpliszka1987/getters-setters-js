@@ -41,3 +41,21 @@ console.log(toyotaRav.make);
 
 // log obj model property
 console.log(toyotaRav.model);
+
+// Created a factory func using destructiong to shorten the code.
+const createBday = (name, month, day) => {
+  return {
+    name,
+    month,
+    day,
+    birthdayInfo() {
+      return `${this.name} birthday is on ${this.month} ${this.day}.`;
+    },
+  };
+};
+
+// create a obj using the factory func
+const robert = createBday("Robert", "February", 28);
+
+// Calling func method
+console.log(robert.birthdayInfo());
