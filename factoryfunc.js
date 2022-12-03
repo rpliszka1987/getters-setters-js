@@ -12,22 +12,23 @@ const createCharacter = (name, level) => {
 // createing new character using factory function
 const spiderman = createCharacter("Spider-Man", 100);
 
+// Calling hello() function on the object
 spiderman.hello();
 
-
+// factory function that creates a new car
 const createCar = (year, make, model) => {
-    return {
-        year: year,
-        make: make,
-        model: model,
-        carInfo() {
-            return(
-                `This is a ${this.year} ${this.make} ${this.model}. For more information contact dealer.`
-            )
-        }
-    }
-}
+  return {
+    year: year,
+    make: make,
+    model: model,
+    carInfo() {
+      return `This is a ${this.year} ${this.make} ${this.model}. For more information contact dealer.`;
+    },
+  };
+};
 
-const toyotaRav = createCar(2023, 'Toyota', 'Rav4');
+// Creates new car
+const toyotaRav = createCar(2023, "Toyota", "Rav4");
 
-console.log(toyotaRav.carInfo())
+// Calls carInfo() method on totoyaRav object
+console.log(toyotaRav.carInfo());
