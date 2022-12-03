@@ -68,3 +68,32 @@ const heidi = {
 const { name } = heidi;
 
 console.log(heidi);
+
+// Example of Built in Obj Methods
+
+// Created robot obj
+const robot = {
+  model: "SAL-1000",
+  mobile: true,
+  sentient: false,
+  armor: "Steel-plated",
+  energyLevel: 75,
+};
+
+// Assigns property names of the robot obj
+const newRobot = Object.keys(robot);
+
+console.log(newRobot);
+
+// Returns obj properties with values array
+const robotEntries = Object.entries(robot);
+
+console.log(robotEntries);
+
+// Returns new obj with 2 new porperties plus robot properties
+const newerRobot = Object.assign(
+  { laserBlaster: true, voiceRecognition: true },
+  robot
+);
+
+console.log(newerRobot);
