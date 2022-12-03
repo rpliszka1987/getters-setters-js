@@ -59,3 +59,12 @@ const robert = createBday("Robert", "February", 28);
 
 // Calling func method
 console.log(robert.birthdayInfo());
+
+// Destructured Assignment example.
+const heidi = {
+  name: "Heidi",
+};
+
+const { name } = heidi;
+
+console.log(heidi);
