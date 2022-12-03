@@ -32,3 +32,12 @@ const toyotaRav = createCar(2023, "Toyota", "Rav4");
 
 // Calls carInfo() method on totoyaRav object
 console.log(toyotaRav.carInfo());
+
+// logs obj year property
+console.log(toyotaRav.year);
+
+// logs obj make property
+console.log(toyotaRav.make);
+
+// log obj model property
+console.log(toyotaRav.model);
