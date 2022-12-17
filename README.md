@@ -17,3 +17,6 @@ This is a JS application which is used for setting daily restaurant specials. I 
 ## Team Stats
 
 This is a JS application which is used to keep team scores and players rosters. There are objects which are storing players infomation such as first name, last name, and age. Created a games which store opponents, team points, and opponents points to keep score of previous games. Finally there are two getters which one gets all the players and other gets the games. Last part of the application are team methods which one is to addPlayer() and addGame(), which allows to add additional games and rosters to the object. This is a excercise from Code Academy which is to practice setters and getters.
+
+
+Thank you
